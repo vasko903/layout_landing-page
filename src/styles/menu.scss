@@ -1,0 +1,17 @@
+.menu {
+  box-sizing: border-box;
+  height: 100vh;
+  padding: 24px 20px 40px;
+  background-color: $bg-color-menu;
+
+  &__content {
+    position: relative;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+}

@@ -1,0 +1,22 @@
+.icon {
+  display: inline-block;
+  width: $icon-width;
+  height: $icon-height;
+  cursor: pointer;
+
+
+  &--phone {
+    background-image: url('../icons/icon-phone-call.png');
+  }
+
+  &--menu {
+    background-image: url('../icons/icon-burger-menu.png');
+  }
+
+  &--close {
+    background-image: url('../icons/icon-close.png');
+  }
+
+}
+
+
