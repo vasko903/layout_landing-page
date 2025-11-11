@@ -1,0 +1,23 @@
+@mixin content-padding-inline() {
+  padding-inline: 20px;
+
+  @media (min-width: 576px) {
+    padding-inline: 72px;
+  }
+}
+
+@mixin icons-size-height() {
+  height: $icon-mobile-size;
+
+  @media (min-width: 576px) {
+    height: $icon-tablet-size;
+  }
+}
+
+@mixin icons-size-width() {
+  width: $icon-mobile-size;
+
+  @media (min-width: 576px) {
+    width: $icon-tablet-size;
+  }
+}

@@ -1,9 +1,8 @@
 .icon {
   display: inline-block;
-  width: $icon-width;
-  height: $icon-height;
-  cursor: pointer;
-
+  
+  @include icons-size-height;
+  @include icons-size-width;
 
   &--phone {
     background-image: url('../icons/icon-phone-call.png');
@@ -16,7 +15,5 @@
   &--close {
     background-image: url('../icons/icon-close.png');
   }
-
 }
-
 

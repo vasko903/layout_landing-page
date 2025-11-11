@@ -1,0 +1,26 @@
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 24;
+  
+  @include content-pading-inline;
+
+
+
+  &__icons {
+    display: flex;
+    gap: $icon-mobile-gap;
+
+    @media (min-width: 576px) {
+      gap: $icon-tablet-gap;
+    }
+  }
+
+
+  &__logo {
+    display: flex;
+  }
+
+}

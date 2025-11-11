@@ -1,7 +1,6 @@
 .header {
   height: 100vh;
   box-sizing: border-box;
-  padding: 24px 20px 40px;
   background-image: url(../images/back-ground.png.png);
   background-size: cover;
   background-position: center;
@@ -10,16 +9,6 @@
   flex-direction: column;
   justify-content: space-between;
 
-  &__top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  &__icons {
-    display: flex;
-    gap: $icon-gap;
-  }
 
   &__title {
     margin: 0;
@@ -28,5 +17,11 @@
     font-size: 36px;
     line-height: 100%;
     vertical-align: middle;
+  }
+
+  &__bottom {
+    padding-bottom: 40px;
+
+    @include content-pading-inline;
   }
 }
