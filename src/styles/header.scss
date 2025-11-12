@@ -14,14 +14,14 @@
     margin: 0;
     font-weight: 700;
     font-style: bold;
-    font-size: 36px;
     line-height: 100%;
     vertical-align: middle;
+
+    @include header-title-size;
   }
 
   &__bottom {
-    padding-bottom: 40px;
-
+    @include header-pading-bottom;
     @include content-pading-inline;
   }
 }

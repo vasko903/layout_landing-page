@@ -3,8 +3,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-block: 24;
 
+  @include top-bar-pading-block;
   @include content-pading-inline;
 
 
@@ -21,6 +21,8 @@
 
   &__logo {
     display: flex;
+
+    @include logo-size;
   }
 
 }

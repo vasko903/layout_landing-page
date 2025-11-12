@@ -1,11 +1,11 @@
 .icon {
   display: inline-block;
-  
+
   @include icons-size-height;
   @include icons-size-width;
 
   &--phone {
-    background-image: url('../icons/icon-phone-call.png');
+    background-image: url('../icons/icon-phone-number.png');
   }
 
   &--menu {
@@ -13,7 +13,7 @@
   }
 
   &--close {
-    background-image: url('../icons/icon-close.png');
+    background-image: url('../icons/icon-close.svg');
   }
 }
 
