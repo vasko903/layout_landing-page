@@ -40,19 +40,19 @@
   }
 }
 
-@mixin header-title-size() {
-  font-size: $font-size-header-title-mobile;
+// @mixin header-title-size() {
+//   font-size: $font-size-header-title-mobile;
 
-  @media (min-width: 744px) {
-    font-size: $font-size-header-title-tablet;
-  }
+//   @media (min-width: 744px) {
+//     font-size: $font-size-header-title-tablet;
+//   }
 
-  @media (min-width: 1200px) {
-    font-size: $font-size-header-title-desktop;
-  }
+//   @media (min-width: 1200px) {
+//     font-size: $font-size-header-title-desktop;
+//   }
 
 
-}
+// }
 
 
 @mixin logo-size() {
