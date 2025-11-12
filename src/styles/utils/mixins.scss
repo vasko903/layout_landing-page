@@ -1,11 +1,11 @@
 @mixin content-pading-inline() {
   padding-inline: $pading-inline-mobile;
 
-  @media (min-width: 576px) {
+  @media (min-width: 744px) {
     padding-inline: $pading-inline-tablet;
   }
 
-  @media (min-width: 1056px) {
+  @media (min-width: 1200px) {
     padding-inline: $pading-inline-desktop;
   }
 
@@ -14,11 +14,11 @@
 @mixin header-pading-bottom() {
   padding-bottom: $header-pading-bottom-mobile;
 
-  @media (min-width: 576px) {
+  @media (min-width: 744px) {
     padding-bottom: $header-pading-bottom-tablet;
   }
 
-  @media (min-width: 1056px) {
+  @media (min-width: 1200px) {
     padding-bottom: $header-pading-bottom-desktop;
   }
 
@@ -27,7 +27,7 @@
 @mixin top-bar-pading-block() {
   padding-block: $pading-block-mobile;
 
-  @media (min-width: 576px) {
+  @media (min-width: 744px) {
     padding-block: $pading-block-tablet;
   }
 }
@@ -35,7 +35,7 @@
 @mixin menu-top-margin-bottom() {
   margin-bottom: 32px;
 
-  @media (min-width: 576px) {
+  @media (min-width: 744px) {
     margin-bottom: 56px;
   }
 }
@@ -43,11 +43,11 @@
 @mixin header-title-size() {
   font-size: $font-size-header-title-mobile;
 
-  @media (min-width: 576px) {
+  @media (min-width: 744px) {
     font-size: $font-size-header-title-tablet;
   }
 
-  @media (min-width: 1056px) {
+  @media (min-width: 1200px) {
     font-size: $font-size-header-title-desktop;
   }
 
@@ -65,18 +65,38 @@
   }
 }
 
-@mixin icons-size-height() {
-  height: $icon-mobile-size;
+@mixin menu-icon-burger() {
+  height: 24px;
+  width: 24px;
+  background-image: url(../icons/icon-burger-menu-mobile.svg);
 
-  @media (min-width: 576px) {
-    height: $icon-tablet-size;
+  @media (min-width: 744px) {
+    height: 32px;
+    width: 32px;
+    background-image: url(../icons/icon-burger-menu-desktop.svg);
   }
 }
 
-@mixin icons-size-width() {
-  width: $icon-mobile-size;
+@mixin phone-icon-call() {
+  height: 24px;
+  width: 24px;
+  background-image: url(../icons/icon-phone-call-mobile.svg);
 
-  @media (min-width: 576px) {
-    width: $icon-tablet-size;
+  @media (min-width: 744px) {
+    height: 32px;
+    width: 32px;
+    background-image: url(../icons/icon-phone-call-desktop.svg);
+  }
+}
+
+@mixin close-icon() {
+  height: 24px;
+  width: 24px;
+  background-image: url(../icons/icon-close-mobile.svg);
+
+  @media (min-width: 744px) {
+    height: 32px;
+    width: 32px;
+    background-image: url(../icons/icon-close-desktop.svg);
   }
 }
