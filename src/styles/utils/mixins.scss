@@ -40,30 +40,6 @@
   }
 }
 
-// @mixin header-title-size() {
-//   font-size: $font-size-header-title-mobile;
-
-//   @media (min-width: 744px) {
-//     font-size: $font-size-header-title-tablet;
-//   }
-
-//   @media (min-width: 1200px) {
-//     font-size: $font-size-header-title-desktop;
-//   }
-
-
-// }
-
-
-@mixin logo-size() {
-  width: 125;
-  height: 16;
-
-  @media (min-width: 576px) {
-  width: 172;
-  height: 24;
-  }
-}
 
 @mixin menu-icon-burger() {
   height: 24px;
