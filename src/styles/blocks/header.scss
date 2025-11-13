@@ -1,7 +1,7 @@
 .header {
   height: 100vh;
   box-sizing: border-box;
-  background-image: url(../images/back-ground.png.png);
+  background-image: url(../images/header-bg.png);
   background-size: cover;
   background-position: center;
 
@@ -11,16 +11,17 @@
 
 
   &__title {
-    font-size: 36px;
-    margin: 0;
     font-weight: 700;
     font-style: bold;
+    line-height: 100%;
+    margin: 0;
+    font-size: 36px;
 
-    @media (min-width: 744px) {
+    @media (min-width: $onTablet) {
       font-size: 48px;
     }
 
-    @media (min-width: 1200px) {
+    @media (min-width: $onDesktop) {
       font-size: 56px;
     }
   }
