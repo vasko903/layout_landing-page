@@ -1,9 +1,37 @@
 .about-us {
-  &__text {
+  @include page-grid;
+
+  &__title {
+    grid-column: 1 / -1;
+
+    @include on-tablet {
+      grid-column: 1 / 3;
+    }
+
+    @include on-desktop {
+      grid-column: 1 / 4;
+    }
+  }
+
+  &__description {
+    grid-column: 1 / -1;
     font-family: $font-family-description;
     font-weight: 400;
     font-size: 16px;
     line-height: 140%;
     color: $main-color;
+    margin-bottom: 24px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @include on-tablet {
+      grid-column: 4 / 7;
+    }
+
+    @include on-desktop {
+      grid-column: 8 / 13;
+    }
   }
 }

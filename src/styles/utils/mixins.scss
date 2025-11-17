@@ -1,11 +1,27 @@
+
+@mixin on-tablet() {
+  @media (min-width: $tablet-min-width){
+    @content;
+  }
+}
+
+@mixin on-desktop() {
+  @media (min-width: $desktop-min-width){
+    @content;
+  }
+}
+
+
 @mixin content-pading-inline() {
   padding-inline: $pading-inline-mobile;
 
-  @media (min-width: $onTablet) {
+  @include on-tablet {
     padding-inline: $pading-inline-tablet;
   }
 
-  @media (min-width: $onDesktop) {
+  @include on-desktop {
+    max-width: 1020px;
+    margin-inline: auto;
     padding-inline: $pading-inline-desktop;
   }
 
@@ -14,11 +30,11 @@
 @mixin header-pading-bottom() {
   padding-bottom: $header-pading-bottom-mobile;
 
-  @media (min-width: $onTablet) {
+  @include on-tablet {
     padding-bottom: $header-pading-bottom-tablet;
   }
 
-  @media (min-width: $onDesktop) {
+  @include on-desktop {
     padding-bottom: $header-pading-bottom-desktop;
   }
 
@@ -27,7 +43,7 @@
 @mixin top-bar-pading-block() {
   padding-block: $pading-block-mobile;
 
-  @media (min-width: $onTablet) {
+  @include on-tablet {
     padding-block: $pading-block-tablet;
   }
 }
@@ -35,7 +51,7 @@
 @mixin menu-top-margin-bottom() {
   margin-bottom: 32px;
 
-  @media (min-width: $onTablet) {
+  @include on-tablet {
     margin-bottom: 56px;
   }
 }
@@ -46,7 +62,7 @@
   width: 24px;
   background-image: url(../icons/icon-burger-menu-mobile.svg);
 
-  @media (min-width: $onTablet) {
+  @include on-tablet {
     height: 32px;
     width: 32px;
     background-image: url(../icons/icon-burger-menu-desktop.svg);
@@ -58,7 +74,7 @@
   width: 24px;
   background-image: url(../icons/icon-phone-call-mobile.svg);
 
-  @media (min-width: $onTablet) {
+  @include on-tablet {
     height: 32px;
     width: 32px;
     background-image: url(../icons/icon-phone-call-desktop.svg);
@@ -70,7 +86,7 @@
   width: 24px;
   background-image: url(../icons/icon-close-mobile.svg);
 
-  @media (min-width: $onTablet) {
+  @include on-tablet {
     height: 32px;
     width: 32px;
     background-image: url(../icons/icon-close-desktop.svg);
@@ -82,7 +98,7 @@
   width: 24px;
   background-image: url(../icons/icon-burger-menu-hover-mobile.svg);
 
-  @media (min-width: $onTablet) {
+  @include on-tablet {
     height: 32px;
     width: 32px;
     background-image: url(../icons/icon-burger-menu-hover-desktop.svg);
@@ -94,7 +110,7 @@
   width: 100%;
   background-image: url(../icons/phone-number-hover.svg);
 
-  @media (min-width: $onTablet) {
+  @include on-tablet {
     height: 32px;
     width: 100%;
     background-image: url(../icons/phone-number-hover.svg)
@@ -104,7 +120,7 @@
 @mixin icon-gap() {
   gap: $icon-mobile-gap;
 
-    @media (min-width: $onTablet) {
+    @include on-tablet {
       gap: $icon-tablet-gap;
     }
 }
@@ -112,7 +128,7 @@
 @mixin logo-height() {
   height: 16px;
 
-    @media (min-width: $onTablet) {
+    @include on-tablet {
       height: 24px;
     }
 }
@@ -121,11 +137,24 @@
   row-gap: 96px;
   padding-block: 96px;
 
-    @media (min-width: $onTablet) {
+    @include on-tablet {
       row-gap: 120px;
       padding-block: 120px;
     }
 }
 
 
+@mixin page-grid() {
+  display: grid;
+  column-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
 
+  @include on-tablet {
+    column-gap: 24px;
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  @include on-desktop {
+    grid-template-columns: repeat(12, 1fr);
+  }
+}

@@ -1,13 +1,19 @@
 .header {
-  height: 100vh;
-  box-sizing: border-box;
   background-image: url(../images/header-bg.png);
   background-size: cover;
   background-position: center;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+
+
+  &__content {
+    @include content-pading-inline;
+
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
 
   &__title {
@@ -17,17 +23,16 @@
     margin: 0;
     font-size: 36px;
 
-    @media (min-width: $onTablet) {
+    @include on-tablet {
       font-size: 48px;
     }
 
-    @media (min-width: $onDesktop) {
+    @include on-desktop {
       font-size: 56px;
     }
   }
 
   &__bottom {
     @include header-pading-bottom;
-    @include content-pading-inline;
   }
 }

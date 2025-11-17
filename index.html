@@ -29,73 +29,68 @@
   <body class="page__body">
     <!-- #region Header -->
     <header class="header">
-      <div class="top-bar">
-        <a href="#" class="top-bar__logo-link">
-          <img class="top-bar__logo" src="./src/images/logo.png"
-          alt="Nothing-Logo">
-        </a>
-
-        <div class="top-bar__icons">
-          <div class="phone-hover-wrapper">
-            <a href="tel: +1 234 5555-55-55" class="icon icon--phone"></a>
+      <div class="header__content">
+        <div class="top-bar">
+          <a href="#" class="top-bar__logo-link">
+            <img class="top-bar__logo" src="./src/images/logo.png"
+            alt="Nothing-Logo">
+          </a>
+          <div class="top-bar__icons">
+            <div class="phone-hover-wrapper">
+              <a href="tel: +1 234 5555-55-55" class="icon icon--phone"></a>
+            </div>
+            <a href="#menu" class="icon icon--menu"></a>
           </div>
-          <a href="#menu" class="icon icon--menu"></a>
+        </div>
+        <div class="header__bottom">
+          <h1 class="header__title">Bring joy back to the everyday</h1>
         </div>
       </div>
-
-      <div class="header__bottom">
-        <h1 class="header__title">Bring joy back to the everyday</h1>
-      </div>
-
     </header>
 
     <!-- #endregion -->
 
     <!-- #region menu -->
     <aside class="menu page__menu" id="menu">
-      <div class="top-bar menu__top">
-        <a href="#" class="top-bar__logo">
-          <img src="./src/images/logo.png" alt="Nothing Logo">
-        </a>
-
-        <a href="#" class="icon icon--close"></a>
-      </div>
-
-
       <div class="menu__content">
-        <nav class="nav menu__nav">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a class="nav__link" href="#recommended">
-                Products
-              </a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#store">
-                Store
-              </a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#login">
-                Login
-              </a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="card">
-                Cart(0)
-              </a>
-            </li>
-          </ul>
-        </nav>
-
-        <a href="tel:+1 234 5555-55-55"   class="menu__phone-number">
-          +1 234 5555-55-55
-        </a>
-
-        <a href="tel:+1 234 5555-55-55"   class="menu__call-to-order">
-          Call to order
-        </a>
-
+        <div class="top-bar menu__top">
+          <a href="#" class="top-bar__logo">
+            <img src="./src/images/logo.png" alt="Nothing Logo">
+          </a>
+          <a href="#" class="icon icon--close"></a>
+        </div>
+        <div class="menu__bottom">
+          <nav class="nav menu__nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="#recommended">
+                  Products
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#store">
+                  Store
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#login">
+                  Login
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="card">
+                  Cart(0)
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <a href="tel:+1 234 5555-55-55"   class="menu__phone-number">
+            +1 234 5555-55-55
+          </a>
+          <a href="tel:+1 234 5555-55-55"   class="menu__call-to-order">
+            Call to order
+          </a>
+        </div>
       </div>
     </aside>
 
@@ -107,7 +102,7 @@
       <section class="recommended" id="recommended">
         <h2 class="section__title">Recommended</h2>
         <div class="recommended__products">
-          <acrticle class="product">
+          <acrticle class="product recommendect__product">
             <img class="product__photo"
             src="./src/images/phone -1.png"
             alt="Phone (1)"
@@ -121,7 +116,7 @@
             <p class="product__price">$ 499.00</p>
           </acrticle>
 
-          <acrticle class="product">
+          <acrticle class="product recommendect__product">
             <img class="product__photo"
             src="./src/images/ear -2.png"
             alt="Ear (2)"
@@ -134,7 +129,7 @@
             <p class="product__price">$ 149.00</p>
           </acrticle>
 
-          <acrticle class="product">
+          <acrticle class="product recommended__product">
             <img class="product__photo"
             src="./src/images/ear -stick.png"
             alt="Ear (stick)"
@@ -152,18 +147,15 @@
 
       <section class="store" id="store">
         <h2 class="section__title">Browse-Nothing-products-by-category</h2>
+
       </section>
 
       <section class="about-us" id="about-us">
-        <h2 class="section__title">About-us</h2>
-        <p class="about-us__text">We’re a London-based tech company on a mission to remove barriers between people and technology.
-          <br>
-          To do this, we’re crafting intuitive, flawlessly connected products that improve our lives without getting in the way.
-          <br>
-          No confusing tech-speak. No silly product names. Just artistry, passion and trust. And products we’re proud to share with our friends and family. Simple.
-          <br>
-          Because beautiful tech shouldn’t be complicated.
-        </p>
+        <h2 class="about-us__title section__title">About-us</h2>
+        <p class="about-us__description">We’re a London-based tech company on a mission to remove barriers between people and technology.</p>
+        <p class="about-us__description">To do this, we’re crafting intuitive, flawlessly connected products that improve our lives without getting in the way.</p>
+        <p class="about-us__description">No confusing tech-speak. No silly product names. Just artistry, passion and trust. And products we’re proud to share with our friends and family. Simple.</p>
+        <p class="about-us__description">Because beautiful tech shouldn’t be complicated</p>.
       </section>
 
       <section class="contact-us" id="contact-us">
