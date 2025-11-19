@@ -1,0 +1,16 @@
+.contact-us {
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    height: 48px;
+    text-decoration: none;
+  }
+
+  &___text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: $text-color-contact-us;
+  }
+}

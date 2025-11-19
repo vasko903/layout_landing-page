@@ -5,12 +5,11 @@
   font-weight: 700;
   font-style: bold;
 
-
   &__content {
     @include content-pading-inline;
   }
 
-  &__top{
+  &__top {
     @include menu-top-margin-bottom;
   }
 

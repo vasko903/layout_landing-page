@@ -20,11 +20,9 @@
     pointer-events: none;
 
     &:target {
-    opacity: 1;
-    transform: translateX(0);
-    pointer-events: all;
+      opacity: 1;
+      transform: translateX(0);
+      pointer-events: all;
+    }
   }
-  }
-
 }
-
