@@ -62,22 +62,22 @@
         <div class="menu__bottom">
           <nav class="nav menu__nav">
             <ul class="nav__list">
-              <li class="nav__item">
+              <li class="nav__information-item">
                 <a class="nav__link" href="#recommended">
                   Products
                 </a>
               </li>
-              <li class="nav__item">
+              <li class="nav__information-item">
                 <a class="nav__link" href="#category">
                   Store
                 </a>
               </li>
-              <li class="nav__item">
+              <li class="nav__information-item">
                 <a class="nav__link" href="#login">
                   Login
                 </a>
               </li>
-              <li class="nav__item">
+              <li class="nav__information-item">
                 <a class="nav__link" href="card">
                   Cart(0)
                 </a>
@@ -196,7 +196,10 @@
             <h3 class="category__title">Accessories</h3>
           </acrticle>
 
-          <button type="button" class="category__button">View All</button>
+          <div class="section__button">
+            <button type="button" class="section__button-text">View All</button>
+          </div>
+
           <img class="category__bgImg"
           src="./src/images/bg-catagory.png" alt="bg-category">
         </div>
@@ -210,32 +213,49 @@
         <p class="about-us__description">Because beautiful tech shouldn’t be complicated.</p>
       </section>
 
-      <section class="contact-us" id="contact-us">
-        <h2 class="section__title">Contact-us</h2>
+      <section class="contact" id="contact">
+        <h2 class="section__title">Contact us</h2>
 
-        <div class="contact-us__buttons">
-          <label class="contact-us__button" for="row">
-            <input class="contact-us__text" type="text"
-            name="Name"
-            placeholder="Name">
-
-          </label>
-
-          <label class="contact-us__button" for="row">
-            <input class="contact-us__text" type="email"
-            name="Email"
-            id="#"
-            placeholder="Email"
-            required
-            >
-          </label>
-
-          <label class="contact-us__buttons" for="row">
-            <input class="contact-us__text" type="text"
-            placeholder="Massage"
-            name="Massage">
-          </label>
+        <div class="contact__container">
+          <div class="contact__massage">
+            <div class="contact__group">
+              <input type="text" placeholder="Name"
+              class="contact__input">
+            </div>
+            <div class="contact__group">
+              <input type="email" placeholder="Email"
+              class="contact__input contact__monospace">
+            </div>
+            <div class="contact__group">
+              <textarea placeholder="Message"
+              class="contact__input contact__monospace" rows="5"></textarea>
+            </div>
+            <div class="section__button contact__button">
+              <button type="submit" class="section__button-text">Send</button>
+            </div>
+          </div>
+          <div class="contact__information">
+            <div class="contact__information-item">
+              <p class="contact__information-label">Phone</p>
+              <a href="tel:+123455555555"
+                class="contact__information-value">+1 234 5555-55-55
+              </a>
+            </div>
+            <div class="contact__information-item">
+              <p class="contact__information-label">Email</p>
+              <a href="mailto:hello@nothing.com" class="contact__information-value">hello@nothing.com</a>
+            </div>
+            <div class="contact__information-item">
+              <p class="contact__information-label">Address</p>
+              <p class="contact__information-value contact__information-addres">
+                  400 first ave.<br>
+                  suite 700<br>
+                  Minneapolis, MN 55401
+              </p>
+            </div>
+          </div>
         </div>
+
       </section>
     </main>
 
