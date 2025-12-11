@@ -62,6 +62,14 @@
     }
   }
 
+  &__button {
+    @include on-desktop {
+      display: flex;
+      justify-content: flex-start;
+      margin-left: 0;
+    }
+  }
+
   &__bgImg {
     margin: 0;
     height: 200px;
