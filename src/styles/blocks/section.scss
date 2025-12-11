@@ -27,7 +27,8 @@
     border-radius: 8px;
 
     @include on-tablet {
-      width: 600px;
+      width: 100%;
+      max-width: 324px;
     }
 
     @include on-desktop {
