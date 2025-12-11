@@ -1,8 +1,13 @@
 .section {
   &__button {
     text-align: center;
-  }
 
+    @include on-desktop {
+      display: flex;
+      justify-content: start;
+      text-align: left;
+    }
+  }
   &__button-text {
     @include content-pading-inline;
 
