@@ -3,6 +3,8 @@
     @include page-grid;
   }
   &__massage {
+    grid-column: 1 / -1;
+
     @include on-desktop {
       grid-column: 1 / 6;
     }
@@ -44,6 +46,8 @@
   }
 
   &__information {
+    grid-column: 1 / -1;
+
     @include on-desktop {
       grid-column: 8 / 13;
     }
