@@ -1,16 +1,16 @@
 .categories {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  @include page-grid;
+
+  row-gap: 40px;
+  grid-column: 1 / -1;
+
+  @include on-tablet {
+    row-gap: 56px;
+  }
 
   &__wraper {
-    display: grid;
-    row-gap: 40px;
-
-    grid-column: 1 / -1;
-
-    @include on-tablet {
-      row-gap: 56px;
-    }
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -21,11 +21,9 @@
 
     margin-bottom: 16px;
   }
-
   &__link {
     position: relative;
     grid-column: 1 / -1;
-
     &--wide {
       grid-column: 1 / -1;
 
